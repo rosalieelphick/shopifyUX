@@ -8,6 +8,9 @@ app.errorHandling = function() {
     } else {
         $(".logoutPage").css("display", "block");
         $(".loginPage").css("display", "none");
+        $(".sidePage").css("z-index", "10");
+        $(".acmeContainer").css("padding-bottom", "0")
+
     }
 
     $("#login").val("login");

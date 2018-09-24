@@ -149,6 +149,9 @@ p {
 .logoutPage {
   flex-basis: 50%; }
 
+.mobileHeader {
+  display: none; }
+
 .formContainer {
   width: 250px;
   margin: 0 auto;
@@ -322,7 +325,8 @@ p {
   padding: 8px;
   width: 170px;
   border-radius: 35px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 0 13px 0px; }
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 13px 0px;
+  font-weight: 700; }
 
 .sidePage {
   flex-basis: 50%;
@@ -349,3 +353,45 @@ p {
   background-color: #f4ebff;
   padding: 10px;
   border-radius: 7px; }
+
+@media (max-width: 700px) {
+  .loginPage,
+  .logoutPage,
+  .sidePage {
+    flex-basis: 100%; }
+  .sidePage {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    width: 100%; }
+  .formContainer {
+    margin-top: 176px; }
+  .formContainer input {
+    padding: 12px; }
+  .acmeContainer {
+    margin-top: 53px;
+    padding-bottom: 115px; }
+  .acmeLogoContainer {
+    margin-top: 0;
+    width: 60px;
+    height: 60px; }
+  .acmeLogo {
+    width: 54px;
+    height: 54px; }
+  .rememberContainer {
+    margin-bottom: 50px;
+    margin-top: 75px; }
+  h2 {
+    margin-top: 33px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center; }
+  .loadingIcon {
+    bottom: 13px; }
+  .errorMessage {
+    padding: 0 30px;
+    margin-top: 10px;
+    font-size: 0.9rem; }
+  .logoutText {
+    margin-top: 230px;
+    margin-bottom: 100px; } }
